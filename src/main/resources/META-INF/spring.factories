@@ -1,0 +1,3 @@
+# auto configuration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+season8.keygen.snowflake.config.SnowflakeRegisterCenterAutoConfiguration

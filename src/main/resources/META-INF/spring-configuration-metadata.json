@@ -1,0 +1,92 @@
+{
+  "groups": [
+    {
+      "name": "snowflake.register",
+      "type": "season8.keygen.snowflake.entity.RegisterConfigProperties",
+      "sourceType": "season8.keygen.snowflake.entity.RegisterConfigProperties"
+    },
+    {
+      "name": "snowflake.register.nacos",
+      "type": "season8.keygen.snowflake.entity.NacosConfigProperties",
+      "sourceType": "season8.keygen.snowflake.entity.RegisterConfigProperties",
+      "sourceMethod": "getNacos()"
+    },
+    {
+      "name": "snowflake.register.redis",
+      "type": "season8.keygen.snowflake.entity.RedisConfigProperties",
+      "sourceType": "season8.keygen.snowflake.entity.RegisterConfigProperties",
+      "sourceMethod": "getRedis()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "snowflake.register.app-id",
+      "type": "java.lang.String",
+      "description": "应用ID",
+      "sourceType": "season8.keygen.snowflake.entity.RegisterConfigProperties"
+    },
+    {
+      "name": "snowflake.register.data-center-id",
+      "type": "java.lang.String",
+      "description": "数据中心Id",
+      "sourceType": "season8.keygen.snowflake.entity.RegisterConfigProperties",
+      "defaultValue": "default"
+    },
+    {
+      "name": "snowflake.register.nacos.host",
+      "type": "java.lang.String",
+      "sourceType": "season8.keygen.snowflake.entity.NacosConfigProperties"
+    },
+    {
+      "name": "snowflake.register.redis.client-name",
+      "type": "java.lang.String",
+      "sourceType": "season8.keygen.snowflake.entity.RedisConfigProperties"
+    },
+    {
+      "name": "snowflake.register.redis.database",
+      "type": "java.lang.Integer",
+      "sourceType": "season8.keygen.snowflake.entity.RedisConfigProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "snowflake.register.redis.host",
+      "type": "java.lang.String",
+      "sourceType": "season8.keygen.snowflake.entity.RedisConfigProperties",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "snowflake.register.redis.password",
+      "type": "java.lang.String",
+      "sourceType": "season8.keygen.snowflake.entity.RedisConfigProperties"
+    },
+    {
+      "name": "snowflake.register.redis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "season8.keygen.snowflake.entity.RedisConfigProperties",
+      "defaultValue": 6379
+    },
+    {
+      "name": "snowflake.register.redis.ssl",
+      "type": "java.lang.Boolean",
+      "sourceType": "season8.keygen.snowflake.entity.RedisConfigProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "snowflake.register.redis.timeout",
+      "type": "java.time.Duration",
+      "sourceType": "season8.keygen.snowflake.entity.RedisConfigProperties"
+    },
+    {
+      "name": "snowflake.register.redis.url",
+      "type": "java.lang.String",
+      "sourceType": "season8.keygen.snowflake.entity.RedisConfigProperties"
+    },
+    {
+      "name": "snowflake.register.type",
+      "type": "season8.keygen.snowflake.entity.RegisterCenterType",
+      "description": "注册中心类型",
+      "sourceType": "season8.keygen.snowflake.entity.RegisterConfigProperties"
+    }
+  ],
+  "hints": []
+}
