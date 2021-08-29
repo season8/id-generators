@@ -73,7 +73,9 @@ public class LettuceFactoryConfiguration {
 				.poolConfig(genericObjectPoolConfig)
 				.build();
 
-		return new LettuceConnectionFactory(redisStandaloneConfiguration, clientConfig);
+		LettuceConnectionFactory lettuceConnectionFactory = new LettuceConnectionFactory(redisStandaloneConfiguration, clientConfig);
+		lettuceConnectionFactory.afterPropertiesSet();
+		return lettuceConnectionFactory;
 	}
 
 }

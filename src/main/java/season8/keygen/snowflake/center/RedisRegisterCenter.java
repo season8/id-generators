@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
-import season8.keygen.snowflake.SnowflakeKeyGen;
+import season8.keygen.SnowflakeKeyGen;
 import season8.keygen.snowflake.redis.SnowflakeRedisConfigHelper;
 import season8.keygen.snowflake.util.IpUtil;
 

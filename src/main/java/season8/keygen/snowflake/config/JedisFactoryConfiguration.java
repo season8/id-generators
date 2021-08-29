@@ -73,7 +73,9 @@ public class JedisFactoryConfiguration {
 		JedisClientConfiguration.JedisPoolingClientConfigurationBuilder jpcb = (JedisClientConfiguration.JedisPoolingClientConfigurationBuilder) JedisClientConfiguration.builder();
 		jpcb.poolConfig(poolConfig);
 		JedisClientConfiguration jedisClientConfiguration = jpcb.build();
-		return new JedisConnectionFactory(redisStandaloneConfiguration, jedisClientConfiguration);
+		JedisConnectionFactory jedisConnectionFactory = new JedisConnectionFactory(redisStandaloneConfiguration, jedisClientConfiguration);
+		jedisConnectionFactory.afterPropertiesSet();
+		return jedisConnectionFactory;
 	}
 
 }
